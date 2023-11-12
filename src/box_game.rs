@@ -68,16 +68,16 @@ pub fn read_local_inputs(
     for handle in &local_players.0 {
         let mut input: u8 = 0;
 
-        if keyboard_input.pressed(KeyCode::W) {
+        if keyboard_input.pressed(KeyCode::Up) {
             input |= INPUT_UP;
         }
-        if keyboard_input.pressed(KeyCode::A) {
+        if keyboard_input.pressed(KeyCode::Left) {
             input |= INPUT_LEFT;
         }
-        if keyboard_input.pressed(KeyCode::S) {
+        if keyboard_input.pressed(KeyCode::Down) {
             input |= INPUT_DOWN;
         }
-        if keyboard_input.pressed(KeyCode::D) {
+        if keyboard_input.pressed(KeyCode::Right) {
             input |= INPUT_RIGHT;
         }
 
